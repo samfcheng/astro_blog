@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+$text-light: rgb(0 0 0 / 0.5);
+$background-secondary: #FAFAFA;
+
+h1,h2,h3 {
+  font-family: "Source Serif 4", serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(0 0 0 / 0.8);
+  text-decoration: underline solid rgb(0 0 0 / 0.2);
+  transition: 0.2s ease;
+
+  &:hover {
+    text-decoration: underline solid rgb(0 0 0 / 0.4);
+  }
+}
+
+.button {
+  font: inherit;
+  color: white;
+  background: black;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  transition: 0.2s ease;
+
+  &:hover {
+    background: rgb(0 0 0 / 0.9);
+    cursor: pointer;
+  }
+}
+
+.global-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10vw;
+
+  .name {
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+}
+.global-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10vw;
+
+  .name {
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+}
