@@ -31,8 +31,17 @@
 .posts {
   background: $background-secondary;
   padding: 6rem 10vw;
+
+  // Flex (the better way)
+  /* 
   display: flex;
   flex-wrap: wrap;
+  */
+
+  // Grid (the worse way)
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
   gap: 2rem;
 
   .post {

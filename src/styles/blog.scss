@@ -1,0 +1,63 @@
+@import './globals.scss';
+
+.blog-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+  .back {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+
+    transition: 0.2s ease;
+
+    svg {
+      display: block;
+      margin-left: -0.125rem;
+    }
+
+    &:hover {
+      transform: rotate(10deg) scale(0.95);
+    }
+  }
+
+  .header-content {
+    padding: 4rem 0;
+    width: min(50rem, 80vw);
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    p {
+      margin: 0.25rem 0 0 0;
+      color: $text-light;
+    }
+  }
+}
+
+.blog-main {
+  margin: -6rem auto 0 auto;
+  padding: 4rem 0;
+  width: min(50rem, 80vw);
+
+  img {
+    max-width: 100%;
+  }
+  p {
+    line-height: 1.5;
+  }
+}

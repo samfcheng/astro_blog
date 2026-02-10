@@ -1,13 +1,13 @@
 ---
-
+const { page } = Astro.props
 ---
 
 <nav class="global-navbar">
-  <span class="name">
+  <a href="../" class="name">
     Sam
-  </span>
+  </a>
   <div class="nav-links">
-    <a href="about">About</a>
+    <a href="about" class={page == "about" ? "highlighted" : ""}>About</a>
     <a href="mailto:sfcheng@usc.edu">Contact</a>
   </div>
 </nav>

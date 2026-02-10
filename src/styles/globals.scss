@@ -53,10 +53,15 @@ a {
     text-transform: uppercase;
     letter-spacing: -0.05em;
     font-weight: 600;
+    text-decoration: none;
   }
   .nav-links {
     display: flex;
     gap: 1rem;
+
+    .highlighted {
+      background: transparentize(yellow, 0.25);
+    }
   }
 }
 .global-footer {

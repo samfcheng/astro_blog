@@ -1,0 +1,21 @@
+@import './globals.scss';
+
+.about-main {
+  padding: 4rem 10vw;
+  display: grid;
+  grid-template-columns: auto 30rem;
+  place-items: center;
+  gap: 10vw;
+  min-height: 80vh;
+
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    line-height: 1.5;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 0.25rem;
+  }
+}
